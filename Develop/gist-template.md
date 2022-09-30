@@ -61,9 +61,11 @@ Matches any character in the square brackets. For example [nN] [oO] matches no, 
 
 ### Greedy and Lazy Match
 
-Greedy match tries to match an element as many times as possible. A lazy match does the opposite by trying to match an element as few times as possible.
+Greedy match tries to match an element as many times as possible. A lazy match does the opposite by trying to match an element as few times as possible. Lazy match can be turned into greedy match by adding a ?.
 
 ### Boundaries
+
+
 
 ### Back-references
 
