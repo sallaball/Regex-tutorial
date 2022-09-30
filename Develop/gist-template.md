@@ -6,7 +6,8 @@ This is a tutorial explaining the specifics of regex so that we can understand t
 
 Regex is a sequence of characters that define a search pattern. Typically, the patterns are used by string-searching algorithms for finding or finding and replacing operations on strings. It can also look for input validations. This is a technique commonly used in theoretical computer science.
 
-Below you will find explanations for the different terms.
+
+Below you will find explanations for the different terms/elements.
 
 
 ## Table of Contents
@@ -65,12 +66,26 @@ Greedy match tries to match an element as many times as possible. A lazy match d
 
 ### Boundaries
 
-
+Word boundary, exhibited with a (\b) it is equivalent to an anchor. It tells the user that this is a word boundary. It is a way to declare here a word/this is a word boundary. Example “fish” within the parenthesis is a word. If a particular regex declared, with anchors, “this is the first of a regex string,” using a ^ carrot, or the end of a string with the dollar sign, then a space or place is being declared. \b asks the programing language to look for that whole word. for example, if we said, please find the entire word “fish.” There are more complexities involved, but that’s a basic idea
 
 ### Back-references
 
+Back-reference is typically a \ followed by a single-digit. It is a command that refers to something that already happened, or a previous part of amatched regular expression. For example, if you have multiple groups in one pair of parentheses, you can refer to a specific group with the \ and the number of group. "\1" would refer to the first group in the parentheses.
+
 ### Look-ahead and Look-behind
+
+* (?=ABC) is a postive lookahead and it matches a group after the main expression without including it in the result.
+
+* (?!ABC) is a negitive lookahead and it specifies a group that can not match after the main expression (if it matches, the result is discarded)
+
+* (?<=ABC>) is a postive lookbehind and matches a group before the main expression without including it in the result.
+
+* (?<!ABC) is a negitive lookbehind and Specifies a group that can not match before the main expression (if it matches, the result is discarded).
+
+Lookaheads and lookbehinds forces the main expressions to be what you have defined it as. Without it being exactly what it is it will not be accepted as a valid input.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Salla Ball: student at SMU full stack web development bootcamp
+
+https://github.com/sallaball 
